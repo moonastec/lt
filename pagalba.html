@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="photos/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon_astec&#9789; pagalba</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: azure;" onload="loadFunction()">
+    <style>
+        ::-moz-selection {
+            /* Code for Firefox */
+            color: azure;
+            background: darkgray;
+        }
+
+        ::selection {
+            color: azure;
+            background: darkgray;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            text-transform: lowercase;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .mygtukas {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 10px;
+            display: flex;
+            position: fixed;
+            box-shadow: 10px 10px 30px;
+            align-items: center;
+            justify-content: center;
+            transition: .6s;
+            margin: 20px;
+            top: 0;
+        }
+
+        .mygtukas:hover {
+            background-color: lightgray;
+            transform: scale(1.2);
+        }
+
+        .mygtukas:hover p {
+            color: black;
+        }
+
+        .mygtukas p {
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            transition: .6s;
+        }
+
+        #screen {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: azure;
+            z-index: 100;
+            top: 0;
+            transition: 0.3s;
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(-360deg);
+            }
+            100%{
+        
+            }
+        }
+        @keyframes size{
+    0%{
+        transform: scale(1.0);
+    }
+    8%{
+        transform: scale(1.1);
+    }
+    16%{
+        transform: scale(1.0);
+    }
+    24%{
+        transform: scale(1.1);
+    }
+    32%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+        @media only screen and (max-width: 1300px) {
+            .loader-cont {
+                top: 10px;
+            }
+        }
+    </style>
+    <div id="screen">
+        <p style="position: absolute; font-size: 13px; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Prastas interneto ryšys</p>
+        <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+        <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
+    </div>
+    <div class="mygtukas"><a href="https://matthewmatexas.github.io/moon_astec/lt/pagrindinis" style="text-decoration: none; width: 100%; height: 100%;">
+            <p><i class="fas fa-arrow-left"></i></p>
+        </a></div>
+    <h1 style="text-align: center; padding-top: 100px;">&copy;Moon_astec&#9789; pagalba</h1>
+    <a href="#puslapis">
+        <p style="margin: 20px auto; width: 95%;">Pagrindinis puslapio naudojimas</p>
+    </a>
+    <a href="#pirkimas">
+        <p style="margin: 20px auto; width: 95%;">Pirkimas</p>
+    </a>
+    <a href="#taisykles">
+        <p style="margin: 20px auto; width: 95%;">Taisyklės</p>
+    </a>
+    <a href="#slapukai">
+        <p style="margin: 20px auto; width: 95%;">Slapukai</p>
+    </a>
+
+    <div id="puslapis" style="text-align: center;">
+        <h2 style="text-align: center;">Pagrindinis puslapio naudojimas</h2>
+        <p style="margin: 10px; text-align: center;">Tik įėję į mūsų puslapį, puslapis automatiškai atpažins jūsų įrenginio kalbą. Jei tai nėra teisinga kalba, galite ją pasikeisti (apie kaip tai padaryti skaitykite žemiau). Nepavykus kalbos nustatyti automatiškai, ją turėsite pasirinkti rankiniu būdu.</p>
+        <p style="margin: 10px; text-align: center;">Viršuje yra meniu mygtukai, kuriuos paspaudus, jūs būsite nuvesti į pasirinktą puslapio vietą arba pasikeisite kalbą.</p>
+        <p style="margin: 10px; text-align: center;">Pavertus žemiau, matomas pats puslapis - skiltys "<span style="background-color: lightgray;">Apie mus</span>", "<span style="background-color: lightgray;">Parduotuvė</span>" ir "<span style="background-color: darkgray;">Kontaktai</span>".</p>
+        <p style="margin: 10px; text-align: center;">"<span style="background-color: lightgray;">Apie mus</span>" skiltyje galite paskaityti, kas mes esame.</p>
+        <p style="margin: 10px; text-align: center;">"<span style="background-color: lightgray;">Parduotuvė</span>" skiltyje jūs galite peržiūrėti ir pirkti prekes (apie kaip tai padaryti skaitykite "Pirkimas" instrukcijos kategorijoje).</p>
+        <p style="margin: 10px; text-align: center;">"<span style="background-color: darkgray;">Kontaktai</span>" skiltyje galite peržiūrėti mūsų kontaktus, slapukų politiką bei pirkimo taisykles (apie kaip tai padaryti, skaitykite "Taisyklės" instrukcijos kategorijoje), pranešti apie klaidą ir sekti savo užsakymą.</p>
+        <img src="instrukcija/pagrindinis.jpg" alt="Pagrindinis puslapis" style="width: 50%; border-radius: 15px; border: 5px solid darkgray;">
+    </div>
+
+    <div id="pirkimas" style="text-align: center; margin-top: 50px;">
+        <h2 style="text-align: center;">Pirkimas</h2>
+        <p style="margin: 10px;">Mūsų puslapyje galite pirkti prekes.</p>
+        <p style="margin: 10px;">Tai padaryti galite pagrindiniame puslapyje esančioje skiltyje "<span style="background-color: lightgray;">Parduotuvė</span>", išsirinkus prekę, paspaudus ant jos ir tada paspaudus mygtuką "<span style="background-color: darkgray;">Pirkti</span>".</p>
+        <p style="margin: 10px;">Taip pat prekes galite pirkti paspaudus ant prekės, po to mygtuką "<span style="color: darkgray;">Skaityti daugiau</span>" ir tada paspaudus mygtuką "<span style="background-color: darkgray;">Pirkti</span>".</p>
+        <p style="margin: 10px;">Paspaudus mygtuką "<span style="background-color: darkgray;">Pirkti</span>", jūs būsite nuvesti prie apmokėjimo. Ten suveskite duomenis ir paspauskite patvirtinimo mygtuką.</p>
+        <p style="margin: 10px;">Jei viskas pavyks, apmokėjimas bus įvykdytas.</p>
+        <p style="margin: 10px;"><span style="color: red;">PASTABA: </span>Lietuviškoje puslapio versijoje prekes galime siųsti tik į Lietuvą. Norėdami siųsti prekę į kitą šalį, prašome persijungti į anglišką puslapio versiją.</p>
+        <p style="margin: 10px;">Kainos mūsų puslapyje visur yra rašomos eurais (ang. Euro).</p>
+        <p style="margin: 10px;">Kainų reikšmės: Eur - euras (-ai), ct - centas (-ai).</p>
+        <p style="margin: 10px;"><span style="color: red;">PASTABA:</span> nepamirškite paspauti mygtuko "Aš ne robotas". Jo nepaspaudus mygtukas patvirtinimo mygtukas nebus aktyvus.</p>
+        <img src="instrukcija/pirkimas.jpg" alt="Pirkimas" style="width: 50%; border-radius: 15px; border: 5px solid darkgray;">
+    </div>
+
+    <div id="taisykles" style="text-align: center; margin-top: 50px;">
+        <h2 style="text-align: center;">Taisyklės</h2>
+        <p style="margin: 10px;">Mūsų puslapyje galioja pirkimo taisyklės bei slapukų politika.</p>
+        <p style="margin: 10px;">Pirkimo taisykles galite perskaityti pagrindinio puslapio apačioje paspaudus mygtuką "<span style="color: darkslateblue; background-color: darkgray;">Pirkimo taisyklės</span>".</p>
+        <img src="instrukcija/taisykles.jpg" alt="Pirkimo taisyklės" style="width: 50%; border-radius: 15px; border: 5px solid darkgray;">
+        <p style="margin: 10px;">Slapukų politiką galite perskaityti pagrindinio puslapio apačioje paspaudus mygtuką "<span style="color: darkslateblue; background-color: darkgray;">Slapukų politika</span>".</p>
+        <img src="instrukcija/politika.jpg" alt="Slapukų politika" style="width: 50%; border-radius: 15px; border: 5px solid darkgray;">
+    </div>
+
+    <div id="slapukai" style=" text-align: center; margin-top: 50px;">
+        <h2 style="text-align: center;">Slapukai</h2>
+        <p style="margin: 10px;">Mūsų puslapyje yra naudojami slapukai.</p>
+        <p style="margin: 10px;">Įėjus į puslapį ant ekrano matysite "Slapukų įspėjimą". Galite sutikti, arba sužinoti daugiau apie slapukus.</p>
+        <p style="margin: 10px;">Kas yra slapukai, kam jie naudojami ir kitą informaciją apie slapukus galite sužinoti paspaudę mygtuką "<span style="color: darkgray; text-decoration: underline;">Sužinoti daugiau</span>".</p>
+        <img src="instrukcija/slapukai.jpg" alt="Slapukų įspėjimas" style="width: 50%; border-radius: 15px; border: 5px solid darkgray; margin-bottom: 50px;">
+    </div>
+
+    <p style="margin: 10px; color: slategray;">Instrukcija paskutinį kartą atnaujinta 2022-07-02</p>
+    <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
+    <script>
+        function loadFunction(){
+            setTimeout(() => {    document.getElementById("screen").style.transform = "scale(5.0)"; }, 1000);
+            setTimeout(() => {    document.getElementById("screen").style.opacity = "0"; }, 1100);
+            setTimeout(() => {    document.getElementById("screen").style.zIndex = "-1"; }, 1200);
+            document.getElementById("wifi").style.marginTop = "-2000px";
+            setTimeout(() => {    document.getElementById("wifi").style.display = "none"; }, 300);
+        }
+        setTimeout(() => {    document.getElementById("wifi").style.marginTop = "-200px"; }, 20000);
+        setTimeout(() => {    document.getElementById("wifi").style.animation = "size 1.5s linear infinite"; }, 20300);
+    </script>
+</body>
+</html>
