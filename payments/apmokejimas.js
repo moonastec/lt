@@ -217,7 +217,7 @@ function pavykoClose() {
       document.getElementById("back2").style.opacity = "1";
       }, 300);
       setTimeout(() => {
-        location.replace("https://matthewmatexas.github.io/moon_astec/lt/pagrindinis")
+        location.replace("https://moonastec.github.io/lt/pagrindinis")
       }, 5300);
   }
   else {
@@ -271,7 +271,7 @@ function pavykoClose() {
       document.getElementById("back2").style.opacity = "1";
       }, 300);
       setTimeout(() => {
-        location.replace("https://matthewmatexas.github.io/moon_astec/lt/pagrindinis")
+        location.replace("https://moonastec.github.io/lt/pagrindinis")
       }, 5300);
   }
 }
