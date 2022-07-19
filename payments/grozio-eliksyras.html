@@ -184,8 +184,9 @@
                     <h1 style="margin: 20px; color: slategray;">Netrukus gausite patvirtinantį pranešimą.</h1>
                     <h1 style="text-align: center; margin-top: 20px;">Ką daryti po apmokėjimo?</h1>
                     <p style="width: 50%; margin: 40px auto;">1. Po apmokėjimo patvirtinimo, pirmiausia sulauksite automatinio patvirtinimo el. laiško jūsų nurodytu el. paštu, kuris nurodys jūsų užsakymo numerį.</p>
-                    <p style="width: 50%; margin: 40px auto;">2. Po to (per 5 dienas) gausite kitą el. laišką, kuriame susitarsite dėl apmokėjimo bei patvirtinsite duomenis.</p>
-                    <p style="width: 50%; margin: 40px auto;">3. Apmokėjus už prekę, ją išsiųsime per 5 dienas (jei yra sandėlyje) jūsų pasirinktu pristatymo būdu.</p>
+                    <p style="width: 50%; margin: 40px auto; color: red;">2. Atsakydami į gautą laišką, turėsite pasirinkti, kokio kvapo eliksyro norite.</p>
+                    <p style="width: 50%; margin: 40px auto;">3. Po to (per 5 dienas) gausite kitą el. laišką, kuriame susitarsite dėl apmokėjimo bei patvirtinsite duomenis.</p>
+                    <p style="width: 50%; margin: 40px auto;">4. Apmokėjus už prekę, ją išsiųsime per 5 dienas (jei yra sandėlyje) jūsų pasirinktu pristatymo būdu.</p>
                     <p style="width: 50%; margin: 40px auto; color: darkgray;">Papildomai: galite mums palikti atsiliepimą: rašykite savo vardą, pavardę, el. paštą ir įvertinimą 1-5 mums <a href="mailto: moon.astec@gmail.com" style="color: blue; text-decoration: underline;">el. paštu</a>.</p>
             </div>
             <p id="nepavyko" style="color: red; text-align: center; position: fixed; top: -250px; width: 100%; height: 50px; overflow: hidden; transition: 0.3s; display: flex; justify-content: center; align-items: center; background-color: azure; z-index: 15;">Užsakymo užklausa nebuvo išsiųsta, bandykite dar kartą.</p>
@@ -219,9 +220,9 @@
     <h1>Apmokėjimas <span style="border-radius: 25px; border: 2px solid black; padding-left: 5px; padding-right: 5px; user-select: none;">BETA</span></h1>
     <h2 style="padding: 10px; margin: 0 auto; text-align: center; margin-top: 10px;">Norint pereiti į sekantį žingsnį, užpildykite reikiamus duomenis.</h2>
     <div class="info" id="info">
-        <img src="photos/debeselis.jpg" alt="Linksmasis debesėlis">
-        <h1>Linksmasis debesėlis</h1>
-        <h1>6 Eur</h1>
+        <img src="photos/eliksyras.jpg" alt="Grožio eliksyras">
+        <h1>Grožio eliksyras</h1>
+        <h1>7 Eur</h1>
         <div style="display: flex; justify-content: center; align-items: center;">
         <div style="width: 10px; height: 10px; background-color: darkseagreen; border-radius: 100%;"></div>
         <p style="margin: 10px;">Yra sandėlyje</p>
@@ -258,7 +259,7 @@
               </select>
             </div>
             <select name="Preke" id="Preke" style="display: none;">
-                <option value="Linksmasis debeselis">Linksmasis debeselis</option>
+                <option value="Grozio eliksyras">Grozio eliksyras</option>
             </select>
             <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="fas fa-shopping-bag" style="color: darkgray;"></i> Pristatymo informacija</h1>
             
@@ -318,10 +319,10 @@
                 <label for="Pastabos"><i class="fas fa-sticky-note" style="color: darkgray;"></i> Pastabos ir klausimai</label>
                 <textarea name="Pastabos ir klausimai" id="Pastabos ir klausimai" cols="25" rows="8" placeholder="pvz., Kada gausiu prekę?"></textarea>
             </div>
+
             
             
-            
-                          <div style="margin-top: 20px;">
+                                       <div style="margin-top: 20px;">
                  <label class="switch">
               <input type="checkbox" id="myCheck" onclick="myFunction()" required>
               <span class="slider round"></span>
@@ -343,6 +344,8 @@
             <div class="flex">
             <button id="toliau" type="submit"><div><i class="fas fa-check" style="font-size: 35px; color: darkseagreen;" id="check"></i><div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: none; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite; margin: 5px;" id="clock"></div></div></button>
             </div>
+            </form>
+        </div>
     </section>
     <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
     <script src="./apmokejimas.js"></script>

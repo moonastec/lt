@@ -594,6 +594,8 @@ section{
 .buttons a{
     color: darkgray;
     transition: .3s;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .buttons a:hover{
     color: lightgray;
@@ -1151,6 +1153,38 @@ section{
     border-radius: 15px;
 }
 #back18{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#eliksyras {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: -120%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    position: fixed;
+  text-align: center;
+  background-color: azure;
+    margin: 0 auto;
+  margin-top: 20px;
+    z-index: 20;
+    overflow: hidden;
+    transition: 0.3s;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+}
+#back19{
     width: 100%;
     height: 100%;
     background-color: black;
@@ -1855,6 +1889,13 @@ button[type="button"]:hover div{
         bottom: 2%;
     }
     #segtukai{
+        width: 90%;
+        height: 96%;
+        right: -200%;
+        top: -0.5%;
+        bottom: 2%;
+    }
+    #eliksyras{
         width: 90%;
         height: 96%;
         right: -200%;
