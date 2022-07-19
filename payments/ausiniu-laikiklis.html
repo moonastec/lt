@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon_astec&#9789; apmokėjimas</title>
+    <link rel="shortcut icon" type="image/png" href="photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="apmokejimas-style.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="loadFunction()">
+    <section>
+        <div id="screen">
+            <p style="position: absolute; font-size: 13px; color: red; transition: 0.3s; margin-top: -2000px;" id="wifi"><i class="fa-solid fa-wifi"></i> Prastas interneto ryšys</p>
+            <div style="width: 120px; height: 120px; border-radius: 100%; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+            <img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute;">
+        </div>
+        <div class="safe" onclick="openForm5()"><img src="photos/moon_astec-safe.png" alt="Moon_astec - saugu" style="width: 100%; height: 100%;"></div>
+        <div class="safe2" id="safe"><img src="photos/moon_astec-safe.png" alt="Moon_astec - saugu" style="width: auto; height: 100%; cursor: pointer;" onclick="closeForm5()">
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <p style="font-size: 15px; color: black; display: inline-block;">Saugumas</p>
+            <p style="font-size: 10px; color: black; display: inline-block; text-align: center;">Šiame puslapyje pirkti yra saugu.</p>
+            <p style="font-size: 10px; color: black; display: inline-block; text-align: center;">Jūsų duomenis <span style="font-weight: 800;">gali</span> matyti tik Moon_astec☽, bei apmokėjimo siuntėjas (Formspree).</p>
+            <p style="font-size: 10px; color: black; display: inline-block; text-align: center;">Taip pat, jūsų saugumui, puslapyje negali pirkti robotai, ir jie yra atpažįstami mūsų sistemoje.</p>
+            </div>
+        </div>
+        <div id="back" onclick="closeForm()"></div>
+        <div id="taisykliu-langas">
+            <i class="fas fa-times" id="closing" onclick="closeForm()"></i>
+                   <h1 style="margin: 30px auto; font-size: 35px; margin-top: 80px;">Moon_astec&#9789; Pirkimo taisyklės</h1>
+                   <p><b>1. SĄVOKOS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.1 Pardavėjas -  &copy;Moon_astec&#9789; - pagal žmogaus norą sukurta svetainė/el. parduotuvė.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.2 Pirkėjas - asmuo, perkantis el. parduotuvėje prekes ar paslaugas arba besinaudojantis el. parduotuve. Pirkėjas – vartotojas yra fizinis asmuo, sulaukęs 12 metų, ketinantis įsigyti iš &copy;Moon_astec&#9789; prekių ar paslaugų asmeniniams, šeimos ar ūkio poreikiams tenkinti, su verslu ar profesija nesusijusiais tikslais.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.3 El. parduotuvė - elektroninė &copy;Moon_astec&#9789; parduotuvė, pasiekiama adresu <span id="nuoroda"><a href="https://matthewmatexas.github.io/moon_astec" target="_blank">https://matthewmatexas.github.io/moon_astec</a>.</span></li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.4 Taisyklės – šios nuotolinės prekių pirkimo taisyklės, kuriomis nustatomos pirkėjo ir pardavėjo teisės bei pareigos, pardavėjo siūlomų prekių ir paslaugų įsigijimo bei apmokėjimo už jas sąlygos, prekių ir paslaugų pristatymo ir grąžinimo tvarka, šalių atsakomybė bei kitos su prekių ir paslaugų pirkimu el. parduotuvėje susijusios nuostatos.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">1.4 Pirkimo sutartis – tarp pirkėjo ir pardavėjo pagal el. parduotuvės pirkimo taisykles sudaryta prekių pirkimo sutartis.</li>
+                   </ul>
+                   <p><b>2. BENDROSIOS NUOSTATOS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.1 Šios taisyklės yra privalomas teisinis dokumentas, kuris nustato pirkėjo ir pardavėjo tarpusavio teises, pareigas ir atsakomybę bei kitas su pardavėjo siūlomų prekių ir paslaugų pirkimu susijusias nuostatas pirkėjui įsigyjant prekes ar paslaugas el. parduotuvėje.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.2 Pirkėjas prekes ir paslaugas el. parduotuvėje gali įsigyti tik susipažinęs ir sutikęs su šiomis taisyklėmis. Pirkėjui patvirtinus susipažinimą su taisyklėmis, jis įsipareigoja jų laikytis bei jas vykdyti. Įsigydamas prekes ir paslaugas el. parduotuvėje, pirkėjas sutinka su taisyklių taikymu ir patvirtina, kad jas suprato. Tuo atveju, kai pirkėjas neperskaitė ir/ar nesuprato taisyklių arba su jomis nesutiko, jis negali pirkti prekių ir paslaugų el. parduotuvėje.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.3 Prekybos veikla parduotuvėje vykdoma iš Lietuvos teritorijos.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">2.4 Pardavėjas turi teisę keisti taisykles. Taisyklių pakeitimai įsigalioja po jų paskelbimo el. parduotuvėje ir taikomi tik tiems užsakymams, kuriuos pirkėjas atlieka po taisyklių pakeitimo. Apie taisyklių pakeitimus pardavėjas informuos pirkėją (pvz., elektroniniu paštu ar/ir paskelbdamas informaciją el. parduotuvėje ar/ir kt.). Jei pirkėjas po taisyklių pakeitimų paskelbimo bet kokiu būdu naudojasi el. parduotuve, laikoma, kad jis sutinka su visais taisyklių pakeitimais.</li>
+                   </ul>
+                   <p><b>3. PIRKIMO SUTARTIES SUDARYMAS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.1 Taisyklės yra pagrindas vienkartinėms prekių pirkimo sutartims sudaryti ir vykdyti. Taisyklių nustatyta tvarka sudarius konkrečios prekės pirkimo sutartį taisyklių sąlygos tampa tokios prekės pirkimo sutarties sąlygomis.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.2 Norėdamas įsigyti prekes, pirkėjas pateikia užsakymą el. parduotuvėje, užpildydamas el. parduotuvėje esančią elektroninę užsakymo formą ir ją pateikdamas pardavėjui.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.3 Pirkimo sutartis tarp pirkėjo ir pardavėjo laikoma sudaryta, kai pirkėjas, susipažinęs su taisyklėmis pateikia prekės užsakymą.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.4 Pirkimo sutartis galioja iki visiško įsipareigojimų įvykdymo. Pirkimo sutartis laikoma įvykdyta, kai prekės perduodamos pirkėjui taisyklių nustatyta tvarka.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">3.5 Sudarydamas pirkimo sutartį pirkėjas įsipareigoja sumokėti prekių kainą ir priimti el. parduotuvėje užsakytas prekes. Vienu metu galima pirkti vieno tipo prekę (kiekis neribojamas). Norėdami užsisakyti papildomų prekių, turite pateikti naują užsakymą pardavėjui.</li>
+                   </ul>
+                   <p><b>4. PIRKĖJO TEISĖS IR PAREIGOS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">4.1 Pirkėjas turi teisę:</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.1 pirkti el. parduotuvėje, laikydamasis taisyklių ir kitų pardavėjo instrukcijų;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.2 (kai jis yra vartotojas) atsisakyti pirkimo sutarties, sudarytos el. parduotuvėje, pranešdamas apie tai pardavėjui el. paštu iki prekės išsiuntimo šių taisyklių nustatyta tvarka;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.3 prašyti pardavėjo pakeisti nekokybiškas ir/ar netinkamai sukomplektuotas prekes, proporcingai sumažinti nekokybiškos ir/ar netinkamai sukomplektuotos prekės kainą, ar nutraukti pirkimo sutartį ir grąžinti prekę, pasinaudoti prekėms taikomomis garantijomis;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.1.4 kitas taisyklėse numatytas teises.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">4.2 Pirkėjas įsipareigoja:</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.1 sumokėti užsakytų prekių bei jų pristatymo kainą ir priimti užsakytas prekes;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.2 priimdamas prekes jas apžiūrėti ir patikrinti, taip pat taisyklių nustatyta tvarka informuoti pardavėją apie siuntos sugadinimą, aiškiai matomus prekės defektus, prekės modelio, komplektacijos neatitikimą pirkėjo užsakymui;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.3 patikrinti, ar įsigyta prekė yra kokybiška, ir informuoti pardavėją el. paštu apie pastebėtus prekės kokybės trūkumus, kurių nebuvo galima pastebėti prekės perdavimo metu;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.4 pasirinkęs prekių atsiėmimo būdą "atsiėmimas", atsiimti prekes pardavėjo nurodytoje vietoje nurodytu laiku;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.5 pasirinkęs prekių pristatymo paslaugą ar kitas pardavėjo siūlomas paslaugas, sudaryti sąlygas jas teikti;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.6 apmokėti prekės grąžinimo išlaidas, jei reikalingas prekės grąžinimas;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.7 nedelsiant informuoti pardavėją el. paštu, jei pasikeitė pirkėjo asmeniniai duomenys, prekių pristatymo duomenys;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.8 nenaudoti el. parduotuvės neteisėtu būdu, įskaitant, bet neapsiribojant, tokiu būdu, kuris gali sukelti pavojų tinkamam el. parduotuvės veikimui, saugumui, vientisumui ar riboti kitų asmenų galimybę pasinaudoti el. parduotuve;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">4.2.9 laikytis kitų taisyklėse nustatytų reikalavimų.</li>
+                   </ul>
+                   <p><b>5. PARDAVĖJO TEISĖS IR PAREIGOS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">5.1 Pardavėjas turi teisę:</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.1 atšaukti pirkėjo užsakymą ir grąžinti tik dalį pinigų, jeigu pirkėjas pažeidžia esmines taisykles, visų pirma – savo veiksmais ar neveikimu kelia grėsmę ar daro žalą pardavėjui, kitiems pirkėjams ar tretiesiems asmenims, el. parduotuvės stabilumui ar saugumui;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.2 riboti ir/ar uždrausti didmeninius pirkimus;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.3 laikinai arba iš viso nutraukti el. parduotuvės veiklą, keisti el. parduotuvę ar atskiras jos dalis, visą ir bet kokį jos turinį, pakeisti el. parduotuvės veiklos internetinį adresą ir/ar, atsižvelgdamas į el. arduotuvės sistemos techninius pajėgumus, turi teisę riboti registruotų pirkėjų skaičių; visgi, tai neturės įtakos iki pardavėjo sprendimo atlikti šiuos veiksmus pirkėjo sudarytoms pirkimo sutartimis ir jų įgyvendinimui;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">5.1.4 pakeisti taisykles, prekių kainas, pirkimo sąlygas ir/ar bet kokias kitas su el. parduotuve susijusias instrukcijas, apie pakeitimus paskelbdamas el. parduotuvėje; visgi, pakeitimai neturės įtakos iki pardavėjo sprendimo atlikti šiuos veiksmus pirkėjo sudarytoms pirkimo sutartimis ir jų įgyvendinimui.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">5.2 Pardavėjas įsipareigoja gerbti pirkėjo privatumą, saugoti jo duomenų slaptumą.</li>
+                   </ul>
+                   <p><b>6. PREKIŲ KAINOS IR APMOKĖJIMAS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">6.1 Prekių kainos Parduotuvėje ir/ar užsakyme yra nurodomos eurais su įskaičiuotu pridėtinės vertės mokesčiu.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">6.2 Prekės pirkėjui parduodamos kainomis, galiojančiomis el. parduotuvėje užsakymo pateikimo momentu. Jei pirkėjas nesutinka su nurodoma kaina, jis negali tęsti prekių užsakymo procedūros ir užsakyti prekių.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">6.3 Į prekių kainą nėra įskaičiuota prekių pristatymo kaina ir paslaugų, kurias iš pardavėjo gali atskirai užsisakyti pirkėjas, kaina. Prekių pristatymo paslauga ir kitos paslaugos yra mokamos, nebent el. parduotuvėje būtų aiškiai nurodoma kitaip. Šių paslaugų kainos ir jų apskaičiavimo bei sumokėjimo tvarka nurodoma el. parduotuvėje.</li>
+                   </ul>
+                   <p><b>7. PREKIŲ PRISTATYMAS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.1 Prekės pristatomos tik Lietuvoje. Galimi prekių pristatymo pirkėjui būdai yra nurodomi pirkėjui el. parduotuvėje formuojant užsakymą.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.2 Prekių pristatymo paslauga yra mokama. Prekių pristatymo kainos yra nurodytos el. parduotuvėje formuojant užsakymą. Prie užsakymo pateikiama informacija yra laikoma sudėtine šių taisyklių dalimi.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.3 Pirkėjui pasirinkus prekių pristatymo paslaugą, jų pristatymo kaina pirkėjui yra nurodoma formuojant prekių užsakymą. Prekių pristatymo kaina rašoma atskirai nuo prekės kainos. Už prekę ir pristatymą mokama vienu metu.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.4 Užsakydamas prekių pristatymo paslaugą, prieš apmokėjimą pirkėjas privalo nurodyti tikslią prekių pristatymo vietą.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.5 Priimdamas prekes, pirkėjas privalo patikrinti siuntos pakuotės būklę. Nustačius siuntos pakuotės pažeidimą, pirkėjas privalo tai pranešti &copy;Moon_astec&#9789; el. paštu.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.6 Nustačius prekių kokybės, ir/ar asortimento neatitikimą, pirkėjas prekių, kurios neatitinka kokybės ir/ar asortimento, negali priimti. Apie atsisakymą priimti prekę ir rastus pažeidimus pirkėjas privalo pranešti &copy;Moon_astec&#9789; el. paštu. Jeigu nustatomas prekių kiekio neatitikimas, apie prekių trūkumą pirkėjas taip pat privalo pranešti &copy;Moon_astec&#9789; el. paštu.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.7 Pirkėjui priėmus siuntą be pastabų laikoma, kad prekės pristatytos nepažeistoje siuntos pakuotėje. Tuo atveju, jeigu prekių trūkumai, atsiradę ne dėl pirkėjo kaltės, paaiškėtų vėliau, pirkėjas nepraranda teisės pasinaudoti 30 dienų po pristatymo trukmės prekių kokybės grąžinimo garantija.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.8 Pirkėjas, prekių užsakymo metu pasirinkęs prekių atsiėmimo galimybę, įsipareigoja prekes iš pardavėjo priimti pats. Perduodant prekes iš pirkėjo gali būti prašoma pateikti asmens tapatybę patvirtinantį dokumentą, taip pat pardavėjo pirkėjui atsiųstą informaciją apie užsakymą.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.9 Pardavėjas atleidžiamas nuo atsakomybės už prekių pateikimo terminų pažeidimą, jeigu prekės pirkėjui nėra pateikiamos arba pateikiamos ne laiku dėl pirkėjo kaltės arba dėl nuo pirkėjo priklausančių aplinkybių.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">7.10 Jei pirkėjas neužsako prekių pristatymo paslaugos, užsakytas prekes pirkėjas gali atsiimti nemokamai sutarus pristatymo laiką ir vietą. Po užsakymo pirkėjas su pardavėju susitaria dėl pristatymo laiko ir vietos.</li>
+                   </ul>
+                   <p><b>8. PREKIŲ GRĄŽINIMAS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.1 Pirkėjas (vartotojas) turi teisę grąžinti prekę nenurodydamas priežasties per 30 (trisdešimt) dienų nuo prekės pristatymo (gavimo) dienos.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.2 Prekės pardavėjui turi būti grąžintos ne vėliau kaip 14 (keturiolika) kalendorinių dienų nuo pranešimo apie pirkimo sutarties atsisakymą pateikimo pardavėjui. Už prekės tinkamą supakavimą grąžinimui atsako pirkėjas. Prekė laikoma tinkamai supakuota tik tada, kai ji yra įdėta į papildomą išorinę pakuotę (įdėta į dėžutę, maišelį, apvyniota popieriumi ir pan.) ir ši pakuotė yra sandariai uždaryta (pavyzdžiui, užklijuota). Pirkėjui tenka tiesioginės prekės grąžinimo išlaidos, nebent pardavėjas po pranešimo apie sutarties atsisakymą gavimo pirkėjui nurodo, kad prekių grąžinimo išlaidas prisiima pats.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.3 Prekės gali būti grąžinamos į sutartą grąžinimo vietą pirkėjo pasirinktais pristatymo būdais.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.4 Pirkėjui pinigai grąžinami tik po to, kai pirkėjas grąžina prekes. Pinigai gali būti grąžinti pirkėjo pasirinktu būdu, jei yra galimybė.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.5 Pardavėjas nelaikomas pažeidusiu pinigų grąžinimo sąlygų, jei pinigų jis negali perversti dėl pirkėjo kaltės (delsimo grąžinti prekes, netikslių duomenų ar pan.).</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.6 Bet kuriuo grąžinimo atveju pardavėjas neprivalo atlyginti pirkėjui papildomų išlaidų, kurios susidarė dėl to, kad šis pasirinko kitą, negu pardavėjo pasiūlytas pigiausias įprastinis prekių pristatymo būdas.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.7 Pirkėjui grąžinant tinkamos kokybės prekes, būtina laikytis šių sąlygų:</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.1 grąžinama prekė turi būti originalioje ar kitos rūšies tvarkingoje pakuotėje;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.2 prekė turi būti pirkėjo nesugadinta;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.3 prekė turi būti nenaudota, nepraradusi prekinės išvaizdos;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.4 grąžinama prekė turi būti tos pačios komplektacijos, kokios buvo pirkėjo gauta;</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 25px; padding-right: 15px;">8.7.5 grąžinant prekę būtina pateikti jos įsigijimą patvirtinantį užsakymo patvritinimo el. laišką.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">8.8 Esant nekokybiškai suteiktoms paslaugoms, pirkėjas turi teisę reikalauti pašalinti paslaugų teikimo trūkumus, grąžinti už paslaugas sumokėtą kainą, sumažinti paslaugų kainą.</li>
+                   </ul>
+                   <p><b>9. BAIGIAMOSIOS NUOSTATOS</b></p>
+                   <ul>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">9.1 Visa informacija, kuri pateikiama pardavėjo el. parduotuvės tinklalapyje, įskaitant, bet neapsiribojant, šias taisykles, informaciją apie pardavėją, siūlomas prekes ir paslaugas bei jų savybes, pirkėjo teisės atsisakyti pirkimo sutarties įgyvendinimo tvarką, pardavėjo teikiamas prekės garantijas (jeigu jos suteikiamos), laikoma pateikta pirkėjui raštu.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px;">9.2 Pardavėjas gali bet kuriuo metu perleisti savo teises ir pareigas, kylančias iš šių taisyklių tretiesiems asmenims be pirkėjo sutikimo, tačiau užtikrindamas, kad pardavėjui perleidus savo teises ir pareigas tretiesiems asmenims, pirkėjo padėtis nepablogės bei teisių ir pareigų apimtis lieka nepakis.</li>
+                       <br>
+                       <li style="list-style: none; padding-left: 15px; padding-right: 15px; margin-bottom: 20px;">9.3 Šios taisyklės atnaujintos 2022-06-16.</li>
+                   </ul>
+                </div>
+                <div id="back2" onclick="pavykoClose()"><div style="width: 120px; height: 120px; border-radius: 100%; opacity: 0; box-shadow: 5px 0 10px darkgray; display: flex; justify-content: center; align-items: center; animation: spin 1s linear infinite;" id="finished"></div><img src="photos/logo.png" alt="Moon_astec" width="100px" height="100px" style="position: absolute; opacity: 0;" id="finished2"></div>
+            <div id="pavyko">
+                <i class="fas fa-times" id="closing" onclick="pavykoClose()"></i>
+                    <h1 style="margin: 20px; color: darkseagreen;"><i class="fas fa-check-square" style="color: darkseagreen; margin: 10px; margin-top: 60px;"></i>Užsakymo užklausa išsiųsta</h1>
+                    <h1 style="margin: 20px; color: slategray;">Netrukus gausite patvirtinantį pranešimą.</h1>
+                    <h1 style="text-align: center; margin-top: 20px;">Ką daryti po apmokėjimo?</h1>
+                    <p style="width: 50%; margin: 40px auto;">1. Po apmokėjimo patvirtinimo, pirmiausia sulauksite automatinio patvirtinimo el. laiško jūsų nurodytu el. paštu, kuris nurodys jūsų užsakymo numerį.</p>
+                    <p style="width: 50%; margin: 40px auto; color: red;">2. Atsakydami į gautą laišką, turėsite pasirinkti, kokio ausinių laikiklio norite.</p>
+                    <p style="width: 50%; margin: 40px auto;">3. Po to (per 5 dienas) gausite kitą el. laišką, kuriame susitarsite dėl apmokėjimo bei patvirtinsite duomenis.</p>
+                    <p style="width: 50%; margin: 40px auto;">4. Apmokėjus už prekę, ją išsiųsime per 5 dienas (jei yra sandėlyje) jūsų pasirinktu pristatymo būdu.</p>
+                    <p style="width: 50%; margin: 40px auto; color: darkgray;">Papildomai: galite mums palikti atsiliepimą: rašykite savo vardą, pavardę, el. paštą ir įvertinimą 1-5 mums <a href="mailto: moon.astec@gmail.com" style="color: blue; text-decoration: underline;">el. paštu</a>.</p>
+            </div>
+            <p id="nepavyko" style="color: red; text-align: center; position: fixed; top: -250px; width: 100%; height: 50px; overflow: hidden; transition: 0.3s; display: flex; justify-content: center; align-items: center; background-color: azure; z-index: 15;">Užsakymo užklausa nebuvo išsiųsta, bandykite dar kartą.</p>
+     <form action="https://matthewmatexas.github.io/moon_astec/lt/pagrindinis">
+      <div class="grizti"><button><i class="fas fa-arrow-left"></i></button></div>
+      </form>
+       <img src="photos/logo.png" alt="Moon_astec apmokėjimas" style="width: 200px;">
+<!--
+        <div class="christmas">
+                <div class="first"></div>
+                <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="second"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="third"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="first"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="second"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="third"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;"></div>
+               <div class="first"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;" id="hide"></div>
+               <div class="second" id="hide"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;" id="hide"></div>
+               <div class="third" id="hide"></div>
+               <div style="border-bottom: 2px solid black; width: 8%; margin-top: -5px;" id="hide"></div>
+               <div class="first" id="hide"></div>
+           </div>
+-->
+    <h1>Apmokėjimas <span style="border-radius: 25px; border: 2px solid black; padding-left: 5px; padding-right: 5px; user-select: none;">BETA</span></h1>
+    <h2 style="padding: 10px; margin: 0 auto; text-align: center; margin-top: 10px;">Norint pereiti į sekantį žingsnį, užpildykite reikiamus duomenis.</h2>
+    <div class="info">
+        <img src="photos/ausines.jpg" alt="Ausinių laikilis">
+        <h1>Ausinių laikilis</h1>
+        <h1>5 Eur</h1>
+        <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 10px; height: 10px; background-color: darkseagreen; border-radius: 100%;"></div>
+        <p style="margin: 10px;">Yra sandėlyje</p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <p>Kiekis</p>
+            <input type="number" id="Kiekis" name="Kiekis" value="1" required style="width: 100px; border: 2px solid black;">
+        </div>
+        <button onclick="next()" id="next">Toliau</button>
+    </div>
+        <div class="container" id="container">
+           
+            <form action="https://formspree.io/f/mdoyzdlr" method="POST" id="my-form" name="myForm">
+            <h1 style="margin-bottom: 20px;"><i class="fas fa-user-circle" style="color: darkgray;"></i> Pirkėjo informacija</h1>
+            <div class="form-group vardas">
+                <label for="Vardas"><i class="far fa-user" style="color: darkgray;"></i> Vardas</label>
+                <input type="text" id="Vardas" name="Vardas" placeholder="pvz., Ieva" required>
+            </div>
+            <div class="form-group vardas">
+                <label for="Pavarde"><i class="fas fa-user" style="color: darkgray;"></i> Pavardė</label>
+                <input type="text" id="Pavarde" name="Pavarde" placeholder="pvz., Urbonaitė" required>
+            </div>
+            <br>
+            <div class="form-group vardas">
+                <label for="El. Pastas"><i class="fas fa-envelope" style="color: darkgray;"></i> El. paštas</label>
+                <input type="email" id="El. Pastas" name="El. Pastas" placeholder="pvz., ievakasparav@gmail.com" required>
+            </div>
+            <div class="form-group vardas" style="margin-top: 15px;" style="color: darkgray;">
+                <label for="Mokejimo budas"><i class="fas fa-money-bill-wave" style="color: darkgray;"></i> Mokėjimo būdas:</label>
+                <br>
+                <select name="Mokejimo budas" id="Mokejimo budas" required>
+                <option value="Grynaisiais atsiimant">Grynaisiais atsiimant</option>
+                <option value="Banko pavedimu">Banko pavedimu</option>
+              </select>
+            </div>
+            <select name="Preke" id="Preke" style="display: none;">
+                <option value="Ausiniu laikilis">Ausiniu laikilis</option>
+            </select>
+            <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="fas fa-shopping-bag" style="color: darkgray;"></i> Pristatymo informacija</h1>
+            
+            <div class="form-group vardas place">
+                <label for="Siuntimo salis"><i class="fas fa-globe-europe" style="color: darkgray;"></i> Siųsti prekę į:</label>
+                <br>
+                <select name="Siuntimo salis" id="Siuntimo salis" required>
+                <option value="Lietuva">Lietuva</option>
+              </select>
+            </div>
+<!--
+            <div class="form-group name margin">
+                <label for="Pasirinkimas">Prekė:</label>
+                <br>
+                <select name="Preke" id="Preke" required>
+                <option value="Karviukas. Spaudymo zaislas">Karviukas. Spaudymo žaislas. 1 Eur</option>
+                <option value="Paveiksleliai. Polaroid nuotraukos">Paveikslėliai. Polaroid nuotraukos 80 ct</option>
+                <option value="Vasaros cukraus sveitiklis">Vasaros cukraus šveitiklis 5 Eur</option>
+                <option value="Debeseliu auskarai">Debesėlių auskarai 6,50 Eur</option>
+                <option value="Astuonkojiuko lipdukas">Aštuonkojiuko lipdukas 1 Eur</option>
+                <option value="Tetos meile">Tetos meilė 9,50 Eur</option>
+                <option value="Vonios putu pagaliukai">Vonios putų pagaliukai 3 Eur</option>
+                <option value="Lupu sveitiklis">Lūpų šveitiklis 2 Eur</option>
+              </select>
+            </div>
+-->
+            <div class="form-group vardas">
+                <label for="Pristatymo budas"><i class="fas fa-shipping-fast" style="color: darkgray;"></i> Pristatymo būdas:</label>
+                <br>
+                <select name="Pristatymo budas" id="Pristatymo budas" required>
+                <option value="Atsiemimas">Atsiėmimas - nemokamai</option>
+                <option value="Pastas">Lietuvos paštas - nuo 2 Eur</option>
+                <option value="Omniva pastomatas">Omniva paštomatas - 2,50 Eur</option>
+                <option value="DPD pastomatas">DPD paštomatas - Nuo 2 Eur</option>
+                <option value="DPD kurjeris">DPD kurjeris - Nuo 5 Eur</option>
+              </select>
+            </div>
+            <br>
+            <div class="form-group vardas">
+                <label for="Uzsakyma atsiims"><i class="fas fa-box-open" style="color: darkgray;"></i> Užsakymą atsiims:</label>
+                <br>
+                <select name="Uzsakyma atsiims" id="Uzsakyma atsiims" required>
+                <option value="Pirkejas">Pirkėjas</option>
+                <option value="Kitas zmogus">Kitas žmogus (parašyti pastabose žemiau)</option>
+              </select>
+            </div>
+            <div class="form-group vardas">
+                <label for="Dovana"><i class="fas fa-gift" style="color: darkgray;"></i> Pakavimas:</label>
+                <br>
+                <select name="Supakuoti kaip dovana" id="Supakuoti kaip dovana" required>
+                <option value="Ne">Paprastas</option>
+                <option value="Taip">Dovana (+1 Eur)</option>
+              </select>
+            </div>
+            <h1 style="margin-bottom: 20px; margin-top: 20px;"><i class="far fa-sticky-note" style="color: darkgray;"></i> Pastabos <span style="font-weight: 100; color: darkgray;">(nebūtina)</span></h1>
+            <div class="form-group text">
+                <label for="Pastabos"><i class="fas fa-sticky-note" style="color: darkgray;"></i> Pastabos ir klausimai</label>
+                <textarea name="Pastabos ir klausimai" id="Pastabos ir klausimai" cols="25" rows="8" placeholder="pvz., Kada gausiu prekę?"></textarea>
+            </div>
+            
+            
+            
+                          <div style="margin-top: 20px;">
+                 <label class="switch">
+              <input type="checkbox" id="myCheck" onclick="myFunction()" required>
+              <span class="slider round"></span>
+            </label>
+            <div style="width: 80px; height: 80px; border-radius: 100%; background-color: white; display: flex; justify-content: center; align-items: center; position: absolute; margin-top: -60px; margin-left: -6px; transition: 0.3s; opacity: 0; z-index: -1" id="confirm">
+                <div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: flex; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite;"></div>
+             </div>
+        <p style="margin: 10px; display: inline-block">Aš ne robotas</p>
+                <div style="width: 70px; height: 70px; border-radius: 50px; background-color: white; display: none; justify-content: center; align-items: center; position: absolute; margin-top: -55px; margin-left: -1px;" id="ok">
+                <p style="text-align: center; color: darkseagreen; display: block; font-size: 45px;"><i class="fas fa-check"></i></p>
+             </div>
+                <div style="width: 70px; height: 70px; border-radius: 50px; background-color: white; display: none; justify-content: center; align-items: center; position: absolute; margin-top: -54px; margin-left: 180px;" id="text2">
+                <p style="text-align: center; color: red; font-size: 30px;"><i class="far fa-clock" style="padding-right: 5px;"></i><i class="fas fa-times" style="opacity: 0;"></i></p>
+             </div>
+         </div>
+          <div>
+              <p class="taisykle">Tęsiant jūs sutinkate su <a onclick="openForm()" style="cursor: pointer; color: blue; text-decoration-line: underline;">pirkimo taisyklėmis</a></p>
+            </div>
+            <div class="flex">
+            <button id="toliau" type="submit"><div><i class="fas fa-check" style="font-size: 35px; color: darkseagreen;" id="check"></i><div style="width: 50px; height: 50px; border-radius: 100%; box-shadow: 2px 0 4px darkgray; display: none; transition: 0.3s; justify-content: center; align-items: center; animation: spin 1s linear infinite; margin: 5px;" id="clock"></div></div></button>
+            </div>
+    </section>
+    <script src="https://kit.fontawesome.com/a11707644f.js" crossorigin="anonymous"></script>
+    <script src="./apmokejimas.js"></script>
+</body>
+</html>
